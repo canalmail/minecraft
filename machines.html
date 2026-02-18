@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="description" content="Machines et redstone Minecraft - Tutoriels par Valentin">
+    <meta name="description" content="Machines Redstone Minecraft par Vava - Tutoriels performants">
     <meta name="theme-color" content="#00c853">
-    <title>Les machines - Minecraft Guide</title>
+    <title>Les machines - Minecraft par Vava</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,37 +35,161 @@
     <main>
         <div class="container">
             <section class="hero">
-                <h2>⚙️ Les Machines</h2>
-                <p>
-                    Fermes automatiques, systèmes redstone et machines incroyables ! 
-                    Laisse les machines travailler pour toi.
-                </p>
+                <h2>⚙️ Machines (Redstone Performante)</h2>
+                <p>Machines utiles, efficaces et optimisées</p>
             </section>
 
-            <section class="content">
-                <article class="card">
-                    <h3>⏳ En construction...</h3>
-                    <p>
-                        Je travaille sur des tutoriels de machines redstone faciles à comprendre et à construire !
-                    </p>
-                    <p style="margin-top: 1rem;">
-                        <strong>Bientôt disponible :</strong><br>
-                        🌾 Ferme de blé automatique<br>
-                        🐔 Ferme à poulets<br>
-                        🔥 Four automatique<br>
-                        🚪 Portes secrètes redstone<br>
-                        💎 Trieur d'objets<br>
-                        🔔 Alarmes et pièges
-                    </p>
-                    <a href="index.html" class="btn">← Retour à l'accueil</a>
-                </article>
+            <section class="intro-section">
+                <div class="card">
+                    <p>Ici tu trouveras des machines <strong>utiles, efficaces et optimisées</strong>.</p>
+                    <p>Chaque machine est expliquée étape par étape avec le matériel nécessaire et les solutions aux problèmes fréquents.</p>
+                </div>
             </section>
+
+            <!-- Machine 1 -->
+            <article class="machine-detail" id="porte-secrete">
+                <h2 class="section-title">🚪 Machine 1 : Porte secrète 2x2</h2>
+                
+                <div class="card">
+                    <div class="machine-meta">
+                        <div class="meta-item">
+                            <strong>À quoi ça sert</strong>
+                            <p>Cacher l'entrée de ta base.</p>
+                        </div>
+                        <div class="meta-item">
+                            <strong>Difficulté</strong>
+                            <p class="difficulty easy">✅ Facile</p>
+                        </div>
+                    </div>
+
+                    <h4>📦 Matériel</h4>
+                    <ul class="materials-list">
+                        <li>4 pistons collants</li>
+                        <li>4 blocs (pierre, terre, au choix)</li>
+                        <li>Redstone (environ 10)</li>
+                        <li>1 bouton ou levier</li>
+                        <li>Torches redstone (2-3)</li>
+                    </ul>
+
+                    <h4>🔨 Étapes</h4>
+                    <ol class="steps-list">
+                        <li><strong>Placer les pistons</strong> – Dispose 4 pistons collants en carré 2x2, face vers l'extérieur</li>
+                        <li><strong>Placer les blocs</strong> – Colle un bloc devant chaque piston (ce sera ta "porte")</li>
+                        <li><strong>Relier avec redstone</strong> – Connecte tous les pistons avec de la redstone au sol</li>
+                        <li><strong>Connecter au bouton</strong> – Place un bouton ou levier qui active la redstone</li>
+                        <li><strong>Tester le mécanisme</strong> – Appuie sur le bouton : les blocs doivent s'ouvrir !</li>
+                    </ol>
+
+                    <div class="warning-box">
+                        <strong>🔧 Dépannage</strong>
+                        <ul>
+                            <li>❌ Ça ne marche pas ? → Vérifie que les pistons sont bien <strong>collants</strong> (avec du slime)</li>
+                            <li>❌ Les blocs ne bougent pas ? → Vérifie que la redstone est bien connectée à tous les pistons</li>
+                            <li>❌ Ça s'ouvre mais ne se referme pas ? → Utilise un bouton (pas un levier) ou ajoute un circuit inverseur</li>
+                        </ul>
+                    </div>
+
+                    <div class="tip-box">
+                        <strong>💡 Astuce de Vava</strong>
+                        <p>Pour cacher encore mieux, place de la terre et de l'herbe sur les blocs de la porte. Personne ne verra que c'est une entrée !</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Machine 2 -->
+            <article class="machine-detail" id="first">
+                <h2 class="section-title">📦 Machine 2 : Trieur d'objets simple</h2>
+                
+                <div class="card">
+                    <div class="machine-meta">
+                        <div class="meta-item">
+                            <strong>À quoi ça sert</strong>
+                            <p>Trier automatiquement les objets dans des coffres différents.</p>
+                        </div>
+                        <div class="meta-item">
+                            <strong>Difficulté</strong>
+                            <p class="difficulty medium">🟡 Moyen</p>
+                        </div>
+                    </div>
+
+                    <h4>📦 Matériel</h4>
+                    <ul class="materials-list">
+                        <li>Entonnoirs (minimum 5 par coffre)</li>
+                        <li>Comparateurs redstone</li>
+                        <li>Redstone</li>
+                        <li>Torches redstone</li>
+                        <li>Coffres</li>
+                        <li>Items à trier (pour configurer)</li>
+                    </ul>
+
+                    <h4>🔨 Principe</h4>
+                    <p>Chaque entonnoir est configuré pour ne laisser passer qu'un type d'objet. Les autres objets sont bloqués et continuent vers le prochain entonnoir.</p>
+
+                    <div class="tip-box">
+                        <strong>💡 Astuce de Vava</strong>
+                        <p>Place 18 items "déchets" (ex: terre) + 1 item que tu veux trier dans chaque entonnoir. Ça le "verrouille" sur ce type d'objet uniquement.</p>
+                    </div>
+
+                    <div class="warning-box">
+                        <strong>⚠️ Attention</strong>
+                        <p>Cette machine nécessite beaucoup de fer (entonnoirs). Prépare une bonne réserve avant de construire !</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Machine 3 -->
+            <article class="machine-detail">
+                <h2 class="section-title">🌿 Machine 3 : Ferme automatique de canne à sucre</h2>
+                
+                <div class="card">
+                    <div class="machine-meta">
+                        <div class="meta-item">
+                            <strong>À quoi ça sert</strong>
+                            <p>Production automatique de canne à sucre pour faire du papier et des livres.</p>
+                        </div>
+                        <div class="meta-item">
+                            <strong>Difficulté</strong>
+                            <p class="difficulty easy">✅ Facile</p>
+                        </div>
+                    </div>
+
+                    <h4>📦 Matériel</h4>
+                    <ul class="materials-list">
+                        <li>Observateur (observer block)</li>
+                        <li>Piston</li>
+                        <li>Canne à sucre</li>
+                        <li>Eau</li>
+                        <li>Terre ou sable</li>
+                        <li>Entonnoir + coffre (optionnel pour collection auto)</li>
+                    </ul>
+
+                    <h4>🔨 Étapes</h4>
+                    <ol class="steps-list">
+                        <li><strong>Plante la canne</strong> – Sur terre/sable à côté de l'eau</li>
+                        <li><strong>Place l'observateur</strong> – Face à la canne, au niveau du 2e bloc (celui qui pousse)</li>
+                        <li><strong>Connecte le piston</strong> – Juste derrière l'observateur</li>
+                        <li><strong>Laisse pousser</strong> – Quand la canne atteint 3 blocs, l'observateur détecte et active le piston qui casse le haut</li>
+                        <li><strong>Collecte</strong> – Ramasse ou ajoute des entonnoirs en bas pour collecter automatiquement</li>
+                    </ol>
+
+                    <div class="success-box">
+                        <strong>✅ Avantage</strong>
+                        <p>Zéro effort ! La machine fonctionne toute seule. Tu n'as plus qu'à vider le coffre de temps en temps.</p>
+                    </div>
+
+                    <div class="tip-box">
+                        <strong>💡 Astuce de Vava</strong>
+                        <p>Construis plusieurs lignes côte à côte pour augmenter la production. 10 lignes = beaucoup de papier pour tes enchantements !</p>
+                    </div>
+                </div>
+            </article>
+
         </div>
     </main>
 
     <footer>
         <div class="container">
-            <p>Site créé par Valentin 🎮 | 2026 | Fait avec ❤️ et beaucoup de redstone</p>
+            <p>Site créé par Vava 🎮 | 2026 | Fait avec ❤️ et beaucoup de redstone</p>
         </div>
     </footer>
 
