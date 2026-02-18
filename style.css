@@ -1,6 +1,6 @@
 /* ==============================================
    MINECRAFT SITE - Design par Ikonia
-   Mobile-First & Responsive
+   Mobile-First & Responsive avec Menu Burger
    Inspiré du skill frontend-design
    ============================================== */
 
@@ -94,10 +94,10 @@ body::before {
 }
 
 /* ==============================================
-   HEADER - Mobile First
+   HEADER - Mobile First avec Menu Burger
    ============================================== */
 header {
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.95);
     border-bottom: 6px solid var(--mc-grass);
     box-shadow: 
         0 8px 16px rgba(0,0,0,0.6),
@@ -111,15 +111,15 @@ header {
 
 .logo {
     font-family: var(--font-display);
-    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    font-size: clamp(1.2rem, 4vw, 2.5rem);
     text-align: center;
     color: var(--mc-emerald);
     text-shadow: 
         3px 3px 0px var(--mc-creeper),
         6px 6px 0px rgba(0,0,0,0.8),
         0 0 20px rgba(0, 200, 83, 0.4);
-    letter-spacing: 0.1em;
-    margin-bottom: var(--space-sm);
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-xs);
     animation: glow 3s ease-in-out infinite;
     transform-style: preserve-3d;
 }
@@ -139,10 +139,10 @@ header {
 
 .tagline {
     text-align: center;
-    font-size: clamp(0.75rem, 3vw, 1rem);
+    font-size: clamp(0.65rem, 2.5vw, 1rem);
     color: var(--mc-gold);
     text-shadow: 2px 2px 0px rgba(0,0,0,0.8);
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-sm);
     animation: fadeIn 1s ease-in;
 }
 
@@ -151,13 +151,58 @@ header {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Navigation - Mobile First */
+/* Menu Burger Toggle Button (Mobile Only) */
+.menu-toggle {
+    display: block;
+    background: var(--mc-emerald);
+    border: 3px solid var(--mc-creeper);
+    padding: var(--space-xs) var(--space-sm);
+    cursor: pointer;
+    margin: 0 auto;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow: 0 4px 0 var(--mc-creeper);
+}
+
+.menu-toggle:hover {
+    background: var(--mc-gold);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 var(--mc-creeper);
+}
+
+.menu-toggle:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 var(--mc-creeper);
+}
+
+/* Navigation - Hidden by default on mobile */
 nav ul {
     list-style: none;
-    display: grid;
+    display: none;
     grid-template-columns: 1fr;
     gap: var(--space-xs);
     padding: 0;
+    margin-top: var(--space-sm);
+}
+
+nav.open ul {
+    display: grid;
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 nav a {
@@ -174,6 +219,7 @@ nav a {
     font-size: 0.85rem;
     position: relative;
     overflow: hidden;
+    border-radius: 4px;
 }
 
 nav a::before {
@@ -258,15 +304,15 @@ main {
 
 .hero h2 {
     font-family: var(--font-display);
-    font-size: clamp(1.2rem, 4vw, 1.8rem);
+    font-size: clamp(1rem, 3.5vw, 1.8rem);
     color: var(--mc-gold);
     text-shadow: 3px 3px 0px #000;
     margin-bottom: var(--space-sm);
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 .hero p {
-    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    font-size: clamp(0.85rem, 2.5vw, 1.1rem);
     line-height: 1.8;
     margin-bottom: var(--space-sm);
     text-shadow: 1px 1px 2px #000;
@@ -333,7 +379,7 @@ main {
 }
 
 .card h3 {
-    font-size: clamp(1.1rem, 3.5vw, 1.4rem);
+    font-size: clamp(1rem, 3.5vw, 1.4rem);
     color: var(--mc-gold);
     text-shadow: 2px 2px 0px #000;
     margin-bottom: var(--space-sm);
@@ -341,7 +387,7 @@ main {
 }
 
 .card p {
-    font-size: clamp(0.85rem, 2.5vw, 1rem);
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
     line-height: 1.7;
     margin-bottom: var(--space-md);
     color: #e0e0e0;
@@ -364,7 +410,7 @@ main {
         0 6px 12px rgba(0,0,0,0.4);
     position: relative;
     top: 0;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
 .btn:hover {
@@ -405,7 +451,8 @@ footer {
 footer p {
     color: #aaa;
     text-shadow: 1px 1px 0px #000;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
+    line-height: 1.6;
 }
 
 /* ==============================================
@@ -414,16 +461,12 @@ footer p {
 
 /* Tablet (600px+) */
 @media (min-width: 600px) {
-    nav ul {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
     .cards {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* Desktop (900px+) */
+/* Desktop (900px+) - Menu toujours visible */
 @media (min-width: 900px) {
     :root {
         font-size: 18px;
@@ -433,9 +476,17 @@ footer p {
         padding: 0 var(--space-md);
     }
     
+    /* Cache le bouton burger sur desktop */
+    .menu-toggle {
+        display: none;
+    }
+    
+    /* Menu toujours visible sur desktop */
     nav ul {
+        display: grid !important;
         grid-template-columns: repeat(4, 1fr);
         gap: var(--space-sm);
+        margin-top: var(--space-md);
     }
     
     .cards {
@@ -460,7 +511,7 @@ footer p {
 
 /* Pixel-perfect touch targets for mobile */
 @media (hover: none) and (pointer: coarse) {
-    nav a, .btn {
+    nav a, .btn, .menu-toggle {
         min-height: 48px;
         display: flex;
         align-items: center;

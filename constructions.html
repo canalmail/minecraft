@@ -19,7 +19,9 @@
             <h1 class="logo">MINECRAFT</h1>
             <p class="tagline">⛏️ Astuces et guides pour devenir meilleur ⛏️</p>
             
-            <nav>
+            <button class="menu-toggle" id="menuToggle">☰ Menu</button>
+            
+            <nav id="nav">
                 <ul>
                     <li><a href="index.html">🏠 Accueil</a></li>
                     <li><a href="constructions.html" class="active">🏗️ Mes constructions</a></li>
@@ -65,5 +67,29 @@
             <p>Site créé par Valentin 🎮 | 2026 | Fait avec ❤️ et beaucoup de redstone</p>
         </div>
     </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const nav = document.getElementById('nav');
+        
+        menuToggle.addEventListener('click', function() {
+            nav.classList.toggle('open');
+            if (nav.classList.contains('open')) {
+                menuToggle.textContent = '✕ Fermer';
+            } else {
+                menuToggle.textContent = '☰ Menu';
+            }
+        });
+        
+        const menuLinks = document.querySelectorAll('nav a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth < 900) {
+                    nav.classList.remove('open');
+                    menuToggle.textContent = '☰ Menu';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
