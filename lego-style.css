@@ -1,0 +1,463 @@
+/* ==============================================
+   LEGO-STYLE INSTRUCTIONS
+   Notice de construction style LEGO
+   ============================================== */
+
+/* Container principal des instructions */
+.lego-instructions {
+    background: #fff;
+    color: #000;
+    border-radius: 12px;
+    padding: var(--space-lg);
+    margin: var(--space-xl) 0;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+/* En-tête style LEGO */
+.lego-header {
+    background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+    color: #fff;
+    padding: var(--space-md);
+    border-radius: 8px 8px 0 0;
+    margin: calc(-1 * var(--space-lg)) calc(-1 * var(--space-lg)) var(--space-lg) calc(-1 * var(--space-lg));
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    flex-wrap: wrap;
+}
+
+.lego-logo {
+    background: #fff;
+    color: #ff0000;
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: 4px;
+    font-weight: bold;
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    letter-spacing: 0.2em;
+}
+
+.lego-title {
+    flex: 1;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* Compteur de pièces style LEGO */
+.lego-pieces {
+    background: #f5f5f5;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.lego-pieces-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: var(--space-sm);
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+.lego-pieces-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: var(--space-sm);
+    margin-top: var(--space-md);
+}
+
+.lego-piece {
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    padding: var(--space-sm);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.lego-piece:hover {
+    border-color: #ff0000;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.lego-piece-icon {
+    font-size: 2rem;
+    margin-bottom: var(--space-xs);
+}
+
+.lego-piece-name {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.lego-piece-count {
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin: var(--space-xs) auto 0;
+}
+
+/* Étape de construction style LEGO */
+.lego-step {
+    background: #fff;
+    border: 3px solid #000;
+    border-radius: 12px;
+    padding: var(--space-lg);
+    margin-bottom: var(--space-xl);
+    position: relative;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
+.lego-step-number {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    background: #000;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 10;
+}
+
+.lego-step-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+    margin-top: var(--space-md);
+}
+
+.lego-step-visual {
+    background: #f8f8f8;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: var(--space-lg);
+    position: relative;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lego-step-text {
+    padding: var(--space-md);
+}
+
+.lego-step-text h4 {
+    color: #000;
+    font-size: 1.1rem;
+    margin-bottom: var(--space-sm);
+    font-weight: bold;
+}
+
+.lego-step-text p {
+    color: #333;
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+/* Vue de construction */
+.lego-build-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 4px;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: var(--space-md);
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 8px;
+}
+
+.lego-block {
+    aspect-ratio: 1;
+    border: 2px solid rgba(0,0,0,0.3);
+    border-radius: 4px;
+    position: relative;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+}
+
+.lego-block.wood {
+    background: linear-gradient(135deg, #8d6e63 0%, #6d4c41 100%);
+}
+
+.lego-block.planks {
+    background: linear-gradient(135deg, #d7ccc8 0%, #bcaaa4 100%);
+}
+
+.lego-block.stone {
+    background: linear-gradient(135deg, #9e9e9e 0%, #757575 100%);
+}
+
+.lego-block.glass {
+    background: linear-gradient(135deg, rgba(100, 181, 246, 0.4) 0%, rgba(100, 181, 246, 0.2) 100%);
+    border-color: rgba(100, 181, 246, 0.6);
+}
+
+.lego-block.door {
+    background: linear-gradient(135deg, #795548 0%, #5d4037 100%);
+}
+
+.lego-block.roof {
+    background: linear-gradient(135deg, #3e2723 0%, #1b0000 100%);
+}
+
+.lego-block.dirt {
+    background: linear-gradient(135deg, #8d6e63 0%, #6d4c41 100%);
+}
+
+.lego-block.grass {
+    background: linear-gradient(180deg, #7cb342 0%, #7cb342 30%, #8d6e63 30%, #8d6e63 100%);
+}
+
+.lego-block.empty {
+    background: transparent;
+    border: 1px dashed rgba(0,0,0,0.2);
+}
+
+.lego-block.highlight {
+    animation: lego-highlight 1.5s ease-in-out infinite;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+    border-color: #ff0000;
+    border-width: 3px;
+}
+
+@keyframes lego-highlight {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+.lego-block.new {
+    animation: lego-new 1s ease-out;
+}
+
+@keyframes lego-new {
+    0% {
+        transform: scale(0) rotate(0deg);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2) rotate(180deg);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+        opacity: 1;
+    }
+}
+
+/* Pièces nécessaires pour cette étape */
+.lego-step-pieces {
+    background: #fffde7;
+    border: 2px solid #fbc02d;
+    border-radius: 8px;
+    padding: var(--space-md);
+    margin-top: var(--space-md);
+}
+
+.lego-step-pieces-title {
+    font-weight: bold;
+    color: #f57f17;
+    margin-bottom: var(--space-sm);
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+.lego-step-pieces-list {
+    display: flex;
+    gap: var(--space-sm);
+    flex-wrap: wrap;
+}
+
+.lego-step-piece {
+    background: #fff;
+    border: 2px solid #fbc02d;
+    border-radius: 6px;
+    padding: var(--space-xs) var(--space-sm);
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    font-size: 0.9rem;
+}
+
+.lego-step-piece-icon {
+    font-size: 1.5rem;
+}
+
+.lego-step-piece-count {
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+/* Flèches et annotations */
+.lego-arrow {
+    font-size: 2rem;
+    color: #ff0000;
+    text-align: center;
+    margin: var(--space-md) 0;
+    animation: lego-arrow-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes lego-arrow-pulse {
+    0%, 100% { transform: translateY(0); opacity: 1; }
+    50% { transform: translateY(5px); opacity: 0.7; }
+}
+
+.lego-annotation {
+    position: absolute;
+    background: #ff0000;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.lego-annotation::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #ff0000;
+}
+
+/* Vue de perspective */
+.lego-perspective {
+    text-align: center;
+    margin: var(--space-md) 0;
+    font-size: 0.85rem;
+    color: #666;
+    font-style: italic;
+}
+
+.lego-view-label {
+    background: #000;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: var(--space-sm);
+}
+
+/* Tips style LEGO */
+.lego-tip {
+    background: #e3f2fd;
+    border-left: 4px solid #2196f3;
+    padding: var(--space-md);
+    border-radius: 6px;
+    margin-top: var(--space-md);
+}
+
+.lego-tip-icon {
+    font-size: 1.5rem;
+    margin-right: var(--space-xs);
+}
+
+.lego-tip strong {
+    color: #1565c0;
+}
+
+/* Warning style LEGO */
+.lego-warning {
+    background: #fff3e0;
+    border-left: 4px solid #ff9800;
+    padding: var(--space-md);
+    border-radius: 6px;
+    margin-top: var(--space-md);
+}
+
+.lego-warning-icon {
+    font-size: 1.5rem;
+    margin-right: var(--space-xs);
+}
+
+.lego-warning strong {
+    color: #e65100;
+}
+
+/* Vue 3D isométrique simplifiée */
+.lego-iso-view {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: var(--space-lg) auto;
+}
+
+.lego-iso-layer {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    gap: 2px;
+}
+
+.lego-iso-layer-1 { bottom: 0; }
+.lego-iso-layer-2 { bottom: 40px; }
+.lego-iso-layer-3 { bottom: 80px; }
+
+.lego-iso-block {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin: 2px;
+    position: relative;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .lego-step-content {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .lego-build-view {
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .lego-build-view {
+        max-width: 500px;
+    }
+}
