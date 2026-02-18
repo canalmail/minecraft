@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
 </head>
 <body>
     <header>
@@ -59,15 +60,67 @@
                             <li>☐ Torches</li>
                         </ul>
 
-                        <h4>🔨 Étapes</h4>
+                        <h4>📊 Timeline du Jour 1</h4>
+                        <div class="timeline">
+                            <div class="timeline-item completed">
+                                <strong>🌳 Étape 1 : Bois (2 min)</strong>
+                                <p>Casse un arbre avec tes mains. Récupère au moins 16 blocs de bois.</p>
+                            </div>
+                            <div class="timeline-item completed">
+                                <strong>⚒️ Étape 2 : Table de craft (1 min)</strong>
+                                <p>Transforme le bois en planches, puis fabrique une table.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <strong>⛏️ Étape 3 : Outils (5 min)</strong>
+                                <p>Pioche en bois → Mine de la pierre → Pioche en pierre</p>
+                            </div>
+                            <div class="timeline-item">
+                                <strong>🏠 Étape 4 : Abri (10 min)</strong>
+                                <p>Construis 4 murs simples ou creuse dans une montagne.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <strong>💡 Étape 5 : Lumière (2 min)</strong>
+                                <p>Fabrique des torches (charbon + bâtons).</p>
+                            </div>
+                        </div>
+
+                        <h4>🎨 Crafting : Table de craft</h4>
+                        <div class="craft-grid">
+                            <div class="craft-slot">🪵</div>
+                            <div class="craft-slot">🪵</div>
+                            <div class="craft-slot"></div>
+                            <div class="craft-slot">🪵</div>
+                            <div class="craft-slot">🪵</div>
+                            <div class="craft-slot"></div>
+                            <div class="craft-slot"></div>
+                            <div class="craft-slot"></div>
+                            <div class="craft-slot"></div>
+                        </div>
+                        <div class="craft-arrow">⬇️</div>
+                        <div class="craft-result">
+                            🛠️ Table de craft
+                        </div>
+
+                        <h4>🔨 Étapes détaillées</h4>
                         <ol class="steps-list">
-                            <li><strong>Coupe du bois immédiatement</strong> – Trouve un arbre et casse-le avec tes mains</li>
-                            <li><strong>Fabrique une table de craft</strong> – Ouvre ton inventaire (E) et transforme le bois en planches, puis en table</li>
-                            <li><strong>Crée une pioche et une hache</strong> – Avec la table de craft</li>
-                            <li><strong>Trouve de la pierre</strong> – Mine 8 blocs de pierre minimum</li>
-                            <li><strong>Construis un abri avant la nuit</strong> – Petit trou dans une montagne ou 4 murs simples</li>
-                            <li><strong>Place des torches</strong> – Fabrique du charbon + bâtons = torches</li>
+                            <li><strong>Coupe du bois immédiatement</strong> – Trouve un arbre et casse-le avec tes mains (tiens le clic enfoncé)</li>
+                            <li><strong>Fabrique une table de craft</strong> – Ouvre ton inventaire (E) et transforme le bois en planches, puis en table (4 planches = 1 table)</li>
+                            <li><strong>Crée une pioche et une hache</strong> – Avec la table de craft posée au sol (clic droit)</li>
+                            <li><strong>Trouve de la pierre</strong> – Mine 8 blocs de pierre minimum pour faire de meilleurs outils</li>
+                            <li><strong>Construis un abri avant la nuit</strong> – Petit trou dans une montagne ou 4 murs simples avec un toit</li>
+                            <li><strong>Place des torches</strong> – Fabrique du charbon (ou utilise du bois comme fuel) + bâtons = torches</li>
                         </ol>
+
+                        <!-- Progress indicator -->
+                        <div class="progress-container">
+                            <div class="progress-label">
+                                <span>Progression Jour 1:</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%;">Presque là !</div>
+                            </div>
+                        </div>
 
                         <div class="warning-box">
                             <strong>⚠️ Pièges à éviter</strong>
@@ -187,6 +240,11 @@
                     <h3 class="chapter-title">Combat final</h3>
                     
                     <div class="card">
+                        <!-- Animated dragon icon -->
+                        <div style="text-align: center; margin-bottom: 1rem;">
+                            <div class="animated-icon" style="font-size: 4rem; animation: float 3s ease-in-out infinite;">🐉</div>
+                        </div>
+                        
                         <h4>🐉 Stratégie débutant</h4>
                         <ol class="steps-list">
                             <li><strong>Détruire les cristaux</strong> – Tire avec ton arc sur les piliers lumineux (ils soignent le dragon)</li>

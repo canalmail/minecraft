@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
 </head>
 <body>
     <header>
@@ -71,6 +72,42 @@
                         <li>Torches redstone (2-3)</li>
                     </ul>
 
+                    <h4>⚡ Schéma Redstone</h4>
+                    <div class="redstone-circuit">
+                        <div style="text-align: center; margin-bottom: 1rem;">
+                            <span class="redstone-component button">🔘 Bouton</span>
+                        </div>
+                        <div class="redstone-line"></div>
+                        <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 0.5rem;">
+                            <span class="redstone-component piston">🔧 Piston 1</span>
+                            <span class="redstone-component piston">🔧 Piston 2</span>
+                            <span class="redstone-component piston">🔧 Piston 3</span>
+                            <span class="redstone-component piston">🔧 Piston 4</span>
+                        </div>
+                        <div class="redstone-line"></div>
+                        <div style="text-align: center; margin-top: 1rem;">
+                            <div class="animated-icon">🚪 Porte s'ouvre !</div>
+                        </div>
+                    </div>
+
+                    <h4>📐 Plan vue du dessus (2x2)</h4>
+                    <div class="building-grid" style="max-width: 200px;">
+                        <!-- Porte fermée -->
+                        <div class="building-block stone">🟫</div>
+                        <div class="building-block stone">🟫</div>
+                        <div class="building-block stone">🟫</div>
+                        <div class="building-block stone">🟫</div>
+                    </div>
+                    <p style="text-align: center;">⬇️ Appuie sur le bouton ⬇️</p>
+                    <div class="building-grid" style="max-width: 200px;">
+                        <!-- Porte ouverte -->
+                        <div class="building-block empty"></div>
+                        <div class="building-block empty"></div>
+                        <div class="building-block empty"></div>
+                        <div class="building-block empty"></div>
+                    </div>
+                    <p style="text-align: center; font-size: 0.85rem; color: #aaa;">Les pistons poussent les blocs sur les côtés !</p>
+
                     <h4>🔨 Étapes</h4>
                     <ol class="steps-list">
                         <li><strong>Placer les pistons</strong> – Dispose 4 pistons collants en carré 2x2, face vers l'extérieur</li>
@@ -79,6 +116,19 @@
                         <li><strong>Connecter au bouton</strong> – Place un bouton ou levier qui active la redstone</li>
                         <li><strong>Tester le mécanisme</strong> – Appuie sur le bouton : les blocs doivent s'ouvrir !</li>
                     </ol>
+
+                    <!-- Progress indicator -->
+                    <div class="progress-container">
+                        <div class="progress-label">
+                            <span>Difficulté:</span>
+                            <span>Facile</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 30%; background: linear-gradient(90deg, #00c853 0%, #2e7d32 100%);">
+                                30%
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="warning-box">
                         <strong>🔧 Dépannage</strong>
@@ -163,7 +213,45 @@
                         <li>Entonnoir + coffre (optionnel pour collection auto)</li>
                     </ul>
 
+                    <h4>📐 Schéma de côté</h4>
+                    <div class="redstone-circuit" style="text-align: center;">
+                        <div style="margin: 1rem 0;">
+                            <div style="display: inline-block; width: 60px; height: 20px; background: #795548; border: 2px solid #000;">Piston</div>
+                        </div>
+                        <div style="margin: 0.5rem 0;">
+                            <div style="display: inline-block; width: 60px; height: 20px; background: #757575; border: 2px solid #000;">👁️ Observer</div>
+                        </div>
+                        <div style="margin: 0.5rem 0;">
+                            <div style="display: inline-block; width: 20px; height: 40px; background: linear-gradient(180deg, #4caf50 0%, #2e7d32 50%, #1b5e20 100%); border: 2px solid #000; position: relative;">
+                                <span style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%);">🌿</span>
+                            </div>
+                        </div>
+                        <div style="margin: 0.5rem 0;">
+                            <div style="display: inline-block; width: 60px; height: 15px; background: #8d6e63; border: 2px solid #000;">Terre</div>
+                        </div>
+                        <div style="margin: 0.5rem 0;">
+                            <div style="display: inline-block; width: 60px; height: 10px; background: #2196f3; border: 2px solid #000;">💧 Eau</div>
+                        </div>
+                    </div>
+                    <p style="text-align: center; font-size: 0.85rem; color: #aaa; margin-top: 0.5rem;">
+                        Quand la canne pousse, l'observateur détecte et active le piston !
+                    </p>
+
                     <h4>🔨 Étapes</h4>
+                    
+                    <!-- Step indicator -->
+                    <div class="step-indicator">
+                        <div class="step-dot active">1</div>
+                        <div class="step-connector"></div>
+                        <div class="step-dot">2</div>
+                        <div class="step-connector"></div>
+                        <div class="step-dot">3</div>
+                        <div class="step-connector"></div>
+                        <div class="step-dot">4</div>
+                        <div class="step-connector"></div>
+                        <div class="step-dot">5</div>
+                    </div>
+
                     <ol class="steps-list">
                         <li><strong>Plante la canne</strong> – Sur terre/sable à côté de l'eau</li>
                         <li><strong>Place l'observateur</strong> – Face à la canne, au niveau du 2e bloc (celui qui pousse)</li>
@@ -171,6 +259,12 @@
                         <li><strong>Laisse pousser</strong> – Quand la canne atteint 3 blocs, l'observateur détecte et active le piston qui casse le haut</li>
                         <li><strong>Collecte</strong> – Ramasse ou ajoute des entonnoirs en bas pour collecter automatiquement</li>
                     </ol>
+
+                    <!-- Animated demo -->
+                    <div style="text-align: center; margin: 2rem 0;">
+                        <div class="animated-icon" style="font-size: 3rem; animation: float 2s ease-in-out infinite;">🌿</div>
+                        <p style="margin-top: 0.5rem; color: var(--mc-emerald);">→ Pousse automatiquement → 📦 Récolte auto</p>
+                    </div>
 
                     <div class="success-box">
                         <strong>✅ Avantage</strong>

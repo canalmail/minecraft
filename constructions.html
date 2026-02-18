@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
 </head>
 <body>
     <header>
@@ -84,16 +85,92 @@
                         <li>4 torches</li>
                     </ul>
 
+                    <h4>📐 Plan vue du dessus (7x5)</h4>
+                    <div class="building-grid">
+                        <!-- Rangée 1 -->
+                        <div class="building-block wood"></div>
+                        <div class="building-block wood"></div>
+                        <div class="building-block wood"></div>
+                        <div class="building-block wood"></div>
+                        <div class="building-block wood"></div>
+                        <div class="building-block wood"></div>
+                        <div class="building-block wood"></div>
+                        <!-- Rangée 2 -->
+                        <div class="building-block wood"></div>
+                        <div class="building-block empty"></div>
+                        <div class="building-block glass"></div>
+                        <div class="building-block empty"></div>
+                        <div class="building-block empty"></div>
+                        <div class="building-block glass"></div>
+                        <div class="building-block wood"></div>
+                        <!-- Rangée 3 -->
+                        <div class="building-block wood"></div>
+                        <div class="building-block empty"></div>
+                        <div class="building-block empty"></div>
+                        <div class="building-block empty"></div>
+                        <div class="building-block empty"></div>
+                        <div class="building-block empty"></div>
+                        <div class="building-block wood"></div>
+                        <!-- Rangée 4 -->
+                        <div class="building-block wood"></div>
+                        <div class="building-block empty"></div>
+                        <div class="building-block empty"></div>
+                        <div class="building-block empty"></div>
+                        <div class="building-block empty"></div>
+                        <div class="building-block empty"></div>
+                        <div class="building-block wood"></div>
+                        <!-- Rangée 5 -->
+                        <div class="building-block wood"></div>
+                        <div class="building-block wood"></div>
+                        <div class="building-block door"></div>
+                        <div class="building-block wood"></div>
+                        <div class="building-block wood"></div>
+                        <div class="building-block wood"></div>
+                        <div class="building-block wood"></div>
+                    </div>
+                    <p style="text-align: center; font-size: 0.85rem; color: #aaa; margin-top: -0.5rem;">
+                        🟫 Murs en bois | 🔲 Espace intérieur | 🔷 Fenêtres | 🚪 Porte
+                    </p>
+
                     <h4>🔨 Étapes</h4>
+                    
+                    <!-- Step indicator -->
+                    <div class="step-indicator">
+                        <div class="step-dot active">1</div>
+                        <div class="step-connector"></div>
+                        <div class="step-dot">2</div>
+                        <div class="step-connector"></div>
+                        <div class="step-dot">3</div>
+                        <div class="step-connector"></div>
+                        <div class="step-dot">4</div>
+                        <div class="step-connector"></div>
+                        <div class="step-dot">5</div>
+                        <div class="step-connector"></div>
+                        <div class="step-dot">6</div>
+                        <div class="step-connector"></div>
+                        <div class="step-dot">7</div>
+                    </div>
+
                     <ol class="steps-list">
-                        <li>Crée une base rectangulaire 7x5</li>
-                        <li>Monte les murs sur 3 blocs de hauteur</li>
-                        <li>Laisse un espace pour la porte</li>
-                        <li>Ajoute les fenêtres</li>
-                        <li>Pose le toit (plat ou incliné)</li>
-                        <li>Place le lit et les coffres</li>
-                        <li>Éclaire avec des torches</li>
+                        <li><strong>Crée une base rectangulaire 7x5</strong> – Place les blocs de bois au sol comme sur le schéma</li>
+                        <li><strong>Monte les murs sur 3 blocs de hauteur</strong> – Empile 3 blocs sur chaque mur</li>
+                        <li><strong>Laisse un espace pour la porte</strong> – Au milieu du mur avant (voir plan)</li>
+                        <li><strong>Ajoute les fenêtres</strong> – Place les vitres sur les côtés</li>
+                        <li><strong>Pose le toit</strong> – Plat ou incliné avec des escaliers</li>
+                        <li><strong>Place le lit et les coffres</strong> – À l'intérieur, dans un coin</li>
+                        <li><strong>Éclaire avec des torches</strong> – Au moins 4 torches pour éviter les mobs</li>
                     </ol>
+
+                    <!-- Progress bar example -->
+                    <div class="progress-container">
+                        <div class="progress-label">
+                            <span>Construction :</span>
+                            <span>Facile (30 min)</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 100%;">Complété !</div>
+                        </div>
+                    </div>
 
                     <div class="tip-box">
                         <strong>💡 Astuce de Vava</strong>
