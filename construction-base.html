@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Notice de construction : Base sécurisée sous terre - Style LEGO">
+    <meta name="theme-color" content="#00c853">
+    <title>Construction : Base sous terre - Minecraft par Vava</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="lego-style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">MINECRAFT</h1>
+            <p class="tagline">⛏️ Astuces et guides pour devenir meilleur ⛏️</p>
+            
+            <button class="menu-toggle" id="menuToggle">☰ Menu</button>
+            
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">🏠 Accueil</a></li>
+                    <li><a href="constructions.html" class="active">🏗️ Mes constructions</a></li>
+                    <li><a href="survie.html">⚔️ Mode survie</a></li>
+                    <li><a href="machines.html">⚙️ Les machines</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="lego-instructions">
+                
+                <div class="lego-header">
+                    <div class="lego-logo">VAVA</div>
+                    <div class="lego-title">🕳️ BASE SÉCURISÉE SOUS TERRE</div>
+                </div>
+
+                <div class="lego-pieces">
+                    <div class="lego-pieces-title">📦 Pièces nécessaires</div>
+                    <div class="lego-pieces-grid">
+                        <div class="lego-piece">
+                            <div class="lego-piece-icon">⛏️</div>
+                            <div class="lego-piece-name">Pioches</div>
+                            <div class="lego-piece-count">3+</div>
+                        </div>
+                        <div class="lego-piece">
+                            <div class="lego-piece-icon">🕯️</div>
+                            <div class="lego-piece-name">Torches</div>
+                            <div class="lego-piece-count">20</div>
+                        </div>
+                        <div class="lego-piece">
+                            <div class="lego-piece-icon">📦</div>
+                            <div class="lego-piece-name">Coffres</div>
+                            <div class="lego-piece-count">4</div>
+                        </div>
+                        <div class="lego-piece">
+                            <div class="lego-piece-icon">🪜</div>
+                            <div class="lego-piece-name">Échelles</div>
+                            <div class="lego-piece-count">15</div>
+                        </div>
+                        <div class="lego-piece">
+                            <div class="lego-piece-icon">🚪</div>
+                            <div class="lego-piece-name">Porte en fer</div>
+                            <div class="lego-piece-count">1</div>
+                        </div>
+                        <div class="lego-piece">
+                            <div class="lego-piece-icon">🔘</div>
+                            <div class="lego-piece-name">Bouton</div>
+                            <div class="lego-piece-count">1</div>
+                        </div>
+                        <div class="lego-piece">
+                            <div class="lego-piece-icon">🔥</div>
+                            <div class="lego-piece-name">Four</div>
+                            <div class="lego-piece-count">1</div>
+                        </div>
+                        <div class="lego-piece">
+                            <div class="lego-piece-icon">🛏️</div>
+                            <div class="lego-piece-name">Lit</div>
+                            <div class="lego-piece-count">1</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ÉTAPE 1 -->
+                <div class="lego-step">
+                    <div class="lego-step-number">1</div>
+                    <div class="lego-step-content">
+                        <div class="lego-step-visual">
+                            <div class="lego-view-label">Vue de profil</div>
+                            <div style="text-align: center; padding: var(--space-lg);">
+                                <div style="display: inline-block;">
+                                    <!-- Escalier qui descend -->
+                                    <div style="display: grid; grid-template-columns: repeat(4, 50px); gap: 2px;">
+                                        <div class="lego-block grass" style="width: 50px; height: 30px;"></div>
+                                        <div class="lego-block grass" style="width: 50px; height: 30px;"></div>
+                                        <div class="lego-block grass" style="width: 50px; height: 30px;"></div>
+                                        <div class="lego-block grass" style="width: 50px; height: 30px;"></div>
+                                    </div>
+                                    <div style="display: grid; grid-template-columns: repeat(4, 50px); gap: 2px;">
+                                        <div class="lego-block empty highlight" style="width: 50px; height: 30px;">⬇️</div>
+                                        <div class="lego-block dirt" style="width: 50px; height: 30px;"></div>
+                                        <div class="lego-block dirt" style="width: 50px; height: 30px;"></div>
+                                        <div class="lego-block dirt" style="width: 50px; height: 30px;"></div>
+                                    </div>
+                                    <div style="display: grid; grid-template-columns: repeat(4, 50px); gap: 2px;">
+                                        <div class="lego-block dirt" style="width: 50px; height: 30px;"></div>
+                                        <div class="lego-block empty highlight" style="width: 50px; height: 30px;">⬇️</div>
+                                        <div class="lego-block dirt" style="width: 50px; height: 30px;"></div>
+                                        <div class="lego-block dirt" style="width: 50px; height: 30px;"></div>
+                                    </div>
+                                    <div style="display: grid; grid-template-columns: repeat(4, 50px); gap: 2px;">
+                                        <div class="lego-block dirt" style="width: 50px; height: 30px;"></div>
+                                        <div class="lego-block dirt" style="width: 50px; height: 30px;"></div>
+                                        <div class="lego-block empty highlight" style="width: 50px; height: 30px;">⬇️</div>
+                                        <div class="lego-block dirt" style="width: 50px; height: 30px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lego-perspective">Escalier en zigzag vers le bas</div>
+                        </div>
+                        <div class="lego-step-text">
+                            <h4>Creuser l'entrée en escalier</h4>
+                            <p>Trouve un endroit et commence à <strong>creuser en diagonale</strong> vers le bas.</p>
+                            <p>Crée un escalier : 1 bloc en avant, 1 bloc vers le bas, répète jusqu'à <strong>10-15 blocs de profondeur</strong>.</p>
+                            
+                            <div class="lego-tip">
+                                <span class="lego-tip-icon">💡</span>
+                                <strong>Astuce :</strong> Place des torches tous les 3-4 blocs pour voir où tu creuses !
+                            </div>
+                            
+                            <div class="lego-step-pieces">
+                                <div class="lego-step-pieces-title">🧱 Pour cette étape :</div>
+                                <div class="lego-step-pieces-list">
+                                    <div class="lego-step-piece">
+                                        <div class="lego-step-piece-icon">⛏️</div>
+                                        <span>Pioche</span>
+                                        <div class="lego-step-piece-count">1</div>
+                                    </div>
+                                    <div class="lego-step-piece">
+                                        <div class="lego-step-piece-icon">🕯️</div>
+                                        <span>Torches</span>
+                                        <div class="lego-step-piece-count">5</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lego-arrow">⬇️</div>
+
+                <!-- ÉTAPE 2 -->
+                <div class="lego-step">
+                    <div class="lego-step-number">2</div>
+                    <div class="lego-step-content">
+                        <div class="lego-step-visual">
+                            <div class="lego-view-label">Vue du dessus (salle 6x6)</div>
+                            <div class="lego-build-view" style="grid-template-columns: repeat(6, 1fr); max-width: 300px;">
+                                <div class="lego-block stone highlight">⬛</div>
+                                <div class="lego-block stone highlight">⬛</div>
+                                <div class="lego-block stone highlight">⬛</div>
+                                <div class="lego-block stone highlight">⬛</div>
+                                <div class="lego-block stone highlight">⬛</div>
+                                <div class="lego-block stone highlight">⬛</div>
+                                
+                                <div class="lego-block stone highlight">⬛</div>
+                                <div class="lego-block empty">🕯️</div>
+                                <div class="lego-block empty"></div>
+                                <div class="lego-block empty"></div>
+                                <div class="lego-block empty">🕯️</div>
+                                <div class="lego-block stone highlight">⬛</div>
+                                
+                                <div class="lego-block stone highlight">⬛</div>
+                                <div class="lego-block empty"></div>
+                                <div class="lego-block empty"></div>
+                                <div class="lego-block empty"></div>
+                                <div class="lego-block empty"></div>
+                                <div class="lego-block stone highlight">⬛</div>
+                                
+                                <div class="lego-block stone highlight">⬛</div>
+                                <div class="lego-block empty"></div>
+                                <div class="lego-block empty"></div>
+                                <div class="lego-block empty"></div>
+                                <div class="lego-block empty"></div>
+                                <div class="lego-block stone highlight">⬛</div>
+                                
+                                <div class="lego-block stone highlight">⬛</div>
+                                <div class="lego-block empty">🕯️</div>
+                                <div class="lego-block empty"></div>
+                                <div class="lego-block empty"></div>
+                                <div class="lego-block empty">🕯️</div>
+                                <div class="lego-block stone highlight">⬛</div>
+                                
+                                <div class="lego-block stone highlight">⬛</div>
+                                <div class="lego-block stone highlight">⬛</div>
+                                <div class="lego-block stone highlight">⬛</div>
+                                <div class="lego-block stone highlight">⬛</div>
+                                <div class="lego-block stone highlight">⬛</div>
+                                <div class="lego-block stone highlight">⬛</div>
+                            </div>
+                            <div class="lego-perspective">Salle principale 6×6 blocs</div>
+                        </div>
+                        <div class="lego-step-text">
+                            <h4>Creuser la salle principale</h4>
+                            <p>En bas de l'escalier, <strong>creuse une grande salle de 6×6 blocs</strong> avec 3 blocs de hauteur.</p>
+                            <p>Les murs, sol et plafond restent en pierre naturelle (pas besoin de construire).</p>
+                            
+                            <div class="lego-warning">
+                                <span class="lego-warning-icon">⚠️</span>
+                                <strong>Important :</strong> Éclaire TOUT de suite avec des torches pour éviter les mobs !
+                            </div>
+                            
+                            <div class="lego-step-pieces">
+                                <div class="lego-step-pieces-title">🧱 Pour cette étape :</div>
+                                <div class="lego-step-pieces-list">
+                                    <div class="lego-step-piece">
+                                        <div class="lego-step-piece-icon">⛏️</div>
+                                        <span>Pioche</span>
+                                        <div class="lego-step-piece-count">1</div>
+                                    </div>
+                                    <div class="lego-step-piece">
+                                        <div class="lego-step-piece-icon">🕯️</div>
+                                        <span>Torches</span>
+                                        <div class="lego-step-piece-count">8</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lego-arrow">⬇️</div>
+
+                <!-- ÉTAPE 3 -->
+                <div class="lego-step">
+                    <div class="lego-step-number">3</div>
+                    <div class="lego-step-content">
+                        <div class="lego-step-visual">
+                            <div class="lego-view-label">Aménagement intérieur</div>
+                            <div style="text-align: center; padding: var(--space-lg);">
+                                <div style="display: grid; grid-template-columns: repeat(3, 70px); gap: 12px; justify-content: center;">
+                                    <div style="background: #616161; padding: var(--space-md); border: 3px solid #000; border-radius: 8px; font-size: 2.5rem;">📦</div>
+                                    <div style="background: #616161; padding: var(--space-md); border: 3px solid #000; border-radius: 8px; font-size: 2.5rem;">📦</div>
+                                    <div style="background: #616161; padding: var(--space-md); border: 3px solid #000; border-radius: 8px; font-size: 2.5rem;">🛏️</div>
+                                    <div style="background: #616161; padding: var(--space-md); border: 3px solid #000; border-radius: 8px; font-size: 2.5rem;">🔥</div>
+                                    <div style="background: #616161; padding: var(--space-md); border: 3px solid #000; border-radius: 8px; font-size: 2.5rem;">🛠️</div>
+                                    <div style="background: transparent;"></div>
+                                </div>
+                            </div>
+                            <div class="lego-perspective">Coffres, lit, four, table de craft</div>
+                        </div>
+                        <div class="lego-step-text">
+                            <h4>Installer le mobilier</h4>
+                            <p>Place dans ta base souterraine :</p>
+                            <ul style="margin-left: var(--space-md); line-height: 2;">
+                                <li>📦 <strong>2-4 coffres</strong> (pour tout ranger)</li>
+                                <li>🛏️ <strong>1 lit</strong> (pour dormir)</li>
+                                <li>🔥 <strong>1 four</strong> (pour cuire)</li>
+                                <li>🛠️ <strong>1 table de craft</strong> (pour fabriquer)</li>
+                            </ul>
+                            
+                            <div class="lego-tip">
+                                <span class="lego-tip-icon">💡</span>
+                                <strong>Astuce :</strong> Colle les coffres le long des murs pour gagner de la place !
+                            </div>
+                            
+                            <div class="lego-step-pieces">
+                                <div class="lego-step-pieces-title">🧱 Pour cette étape :</div>
+                                <div class="lego-step-pieces-list">
+                                    <div class="lego-step-piece">
+                                        <div class="lego-step-piece-icon">📦</div>
+                                        <span>Coffres</span>
+                                        <div class="lego-step-piece-count">4</div>
+                                    </div>
+                                    <div class="lego-step-piece">
+                                        <div class="lego-step-piece-icon">🛏️</div>
+                                        <span>Lit</span>
+                                        <div class="lego-step-piece-count">1</div>
+                                    </div>
+                                    <div class="lego-step-piece">
+                                        <div class="lego-step-piece-icon">🔥</div>
+                                        <span>Four</span>
+                                        <div class="lego-step-piece-count">1</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lego-arrow">⬇️</div>
+
+                <!-- ÉTAPE 4 -->
+                <div class="lego-step">
+                    <div class="lego-step-number">4</div>
+                    <div class="lego-step-content">
+                        <div class="lego-step-visual">
+                            <div class="lego-view-label">Sécurisation entrée</div>
+                            <div style="text-align: center; padding: var(--space-lg);">
+                                <div style="display: inline-block;">
+                                    <div style="background: #616161; padding: var(--space-xl); border: 4px solid #000; border-radius: 8px; position: relative;">
+                                        <div style="font-size: 4rem; margin-bottom: var(--space-sm);">🚪</div>
+                                        <div style="font-size: 2rem;">🔘</div>
+                                        <div style="position: absolute; top: 10px; right: 10px; background: #ff0000; color: #fff; padding: 4px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: bold;">FER</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lego-perspective">Porte en fer + bouton</div>
+                        </div>
+                        <div class="lego-step-text">
+                            <h4>Sécuriser avec une porte en fer</h4>
+                            <p>À l'entrée de ta base, place une <strong>porte en fer</strong> avec un <strong>bouton</strong> à l'intérieur.</p>
+                            <p>Pourquoi du fer ? Les zombies ne peuvent PAS casser les portes en fer !</p>
+                            
+                            <div class="lego-warning">
+                                <span class="lego-warning-icon">⚠️</span>
+                                <strong>Important :</strong> Mets le bouton À L'INTÉRIEUR pour que les mobs ne puissent pas ouvrir de dehors !
+                            </div>
+                            
+                            <div class="lego-step-pieces">
+                                <div class="lego-step-pieces-title">🧱 Pour cette étape :</div>
+                                <div class="lego-step-pieces-list">
+                                    <div class="lego-step-piece">
+                                        <div class="lego-step-piece-icon">🚪</div>
+                                        <span>Porte en fer</span>
+                                        <div class="lego-step-piece-count">1</div>
+                                    </div>
+                                    <div class="lego-step-piece">
+                                        <div class="lego-step-piece-icon">🔘</div>
+                                        <span>Bouton</span>
+                                        <div class="lego-step-piece-count">1</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lego-arrow">⬇️</div>
+
+                <!-- ÉTAPE 5 -->
+                <div class="lego-step">
+                    <div class="lego-step-number">5</div>
+                    <div class="lego-step-content">
+                        <div class="lego-step-visual">
+                            <div class="lego-view-label">Camouflage</div>
+                            <div style="text-align: center; padding: var(--space-lg);">
+                                <div style="display: inline-block; position: relative;">
+                                    <!-- Surface avec herbe -->
+                                    <div style="display: grid; grid-template-columns: repeat(5, 50px); gap: 2px;">
+                                        <div class="lego-block grass" style="width: 50px; height: 40px;">🌱</div>
+                                        <div class="lego-block grass" style="width: 50px; height: 40px;">🌸</div>
+                                        <div class="lego-block grass" style="width: 50px; height: 40px;">🌱</div>
+                                        <div class="lego-block grass" style="width: 50px; height: 40px;">🌿</div>
+                                        <div class="lego-block grass" style="width: 50px; height: 40px;">🌱</div>
+                                    </div>
+                                    <div style="margin-top: var(--space-sm); font-size: 0.9rem; color: #aaa;">Entrée invisible = base secrète !</div>
+                                </div>
+                            </div>
+                            <div class="lego-perspective">Cache l'entrée avec de l'herbe/terre</div>
+                        </div>
+                        <div class="lego-step-text">
+                            <h4>Cacher l'entrée (optionnel)</h4>
+                            <p>Pour rendre ta base vraiment secrète, <strong>cache l'entrée</strong> !</p>
+                            <p>Place de la terre/herbe devant ou utilise des blocs naturels (pierre, bois) pour fondre le décor.</p>
+                            
+                            <div class="lego-tip">
+                                <span class="lego-tip-icon">💡</span>
+                                <strong>Idée pro :</strong> Construis un faux arbre ou rocher au-dessus de l'entrée. Personne ne soupçonnera ta base !
+                            </div>
+                            
+                            <div class="lego-step-pieces">
+                                <div class="lego-step-pieces-title">🧱 Pour cette étape :</div>
+                                <div class="lego-step-pieces-list">
+                                    <div class="lego-step-piece">
+                                        <div class="lego-step-piece-icon">🟫</div>
+                                        <span>Terre/herbe</span>
+                                        <div class="lego-step-piece-count">10</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #616161 0%, #424242 100%); color: #fff; padding: var(--space-xl); border-radius: 12px; text-align: center; margin-top: var(--space-xl);">
+                    <div style="font-size: 4rem; margin-bottom: var(--space-md);">🎉</div>
+                    <h2 style="font-size: 2rem; margin-bottom: var(--space-md);">BASE SÉCURISÉE !</h2>
+                    <p style="font-size: 1.2rem;">Ta base souterraine est terminée ! Les mobs ne pourront jamais te trouver ici.</p>
+                    <p style="margin-top: var(--space-md);">Temps de construction : <strong>30-45 minutes</strong></p>
+                </div>
+
+                <div style="text-align: center; margin-top: var(--space-xl);">
+                    <a href="constructions.html" class="btn">← Retour aux constructions</a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Site créé par Vava 🎮 | 2026 | Fait avec ❤️ et beaucoup de redstone</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const nav = document.getElementById('nav');
+        
+        menuToggle.addEventListener('click', function() {
+            nav.classList.toggle('open');
+            if (nav.classList.contains('open')) {
+                menuToggle.textContent = '✕ Fermer';
+            } else {
+                menuToggle.textContent = '☰ Menu';
+            }
+        });
+        
+        const menuLinks = document.querySelectorAll('nav a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth < 900) {
+                    nav.classList.remove('open');
+                    menuToggle.textContent = '☰ Menu';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
