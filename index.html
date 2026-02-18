@@ -3,117 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Minecraft - En Construction ⛏️</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Courier New', monospace;
-            background: linear-gradient(to bottom, #87CEEB 0%, #87CEEB 60%, #8B7355 60%, #8B7355 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            text-shadow: 3px 3px 0px #000;
-        }
-        
-        .container {
-            text-align: center;
-            background: rgba(0, 0, 0, 0.6);
-            padding: 40px;
-            border: 4px solid #4a4a4a;
-            border-radius: 10px;
-            max-width: 600px;
-            animation: fadeIn 1s ease-in;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: #55ff55;
-            letter-spacing: 2px;
-        }
-        
-        .creeper {
-            font-size: 1.2em;
-            line-height: 1.2;
-            color: #55ff55;
-            margin: 30px 0;
-            white-space: pre;
-        }
-        
-        p {
-            font-size: 1.3em;
-            margin: 20px 0;
-        }
-        
-        .pickaxe {
-            display: inline-block;
-            animation: swing 1s ease-in-out infinite;
-        }
-        
-        @keyframes swing {
-            0%, 100% { transform: rotate(-10deg); }
-            50% { transform: rotate(10deg); }
-        }
-        
-        .status {
-            background: #2a2a2a;
-            border: 2px solid #55ff55;
-            padding: 15px;
-            margin-top: 30px;
-            border-radius: 5px;
-        }
-        
-        .loading {
-            display: inline-block;
-            animation: dots 1.5s infinite;
-        }
-        
-        @keyframes dots {
-            0%, 20% { content: '.'; }
-            40% { content: '..'; }
-            60%, 100% { content: '...'; }
-        }
-    </style>
+    <title>Minecraft - Astuces & Guides</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>⛏️ SITE MINECRAFT ⛏️</h1>
-        
-        <div class="creeper">
-    ██████
-   ████████
-   ██  ██
-   ████████
-   ██████
-   ██  ██
+    <header>
+        <div class="container">
+            <h1 class="logo">MINECRAFT</h1>
+            <p class="tagline">Astuces et guides pour devenir meilleur ⛏️</p>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">🏠 Accueil</a></li>
+                    <li><a href="constructions.html">🏗️ Mes constructions</a></li>
+                    <li><a href="survie.html">⚔️ Mode survie</a></li>
+                    <li><a href="machines.html">⚙️ Les machines</a></li>
+                </ul>
+            </nav>
         </div>
-        
-        <p><span class="pickaxe">⛏️</span> EN CONSTRUCTION <span class="pickaxe">⛏️</span></p>
-        
-        <div class="status">
-            <p style="font-size: 1em; margin: 10px 0;">
-                🔨 Construction en cours<span class="loading">...</span>
-            </p>
-            <p style="font-size: 0.9em; color: #aaa;">
-                Bientôt disponible !
-            </p>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h2>Bienvenue sur mon site Minecraft ! 🎮</h2>
+                <p>Ici, tu vas trouver plein d'astuces et de conseils pour t'améliorer dans Minecraft.</p>
+                <p>Que tu débutes ou que tu sois déjà expérimenté, tu trouveras des guides utiles !</p>
+            </section>
+
+            <section class="cards">
+                <div class="card">
+                    <h3>🏗️ Mes constructions</h3>
+                    <p>Découvre mes meilleures créations et apprends à construire comme un pro !</p>
+                    <a href="constructions.html" class="btn">Voir les constructions</a>
+                </div>
+
+                <div class="card">
+                    <h3>⚔️ Mode survie</h3>
+                    <p>Astuces pour survivre, combattre les mobs et progresser rapidement.</p>
+                    <a href="survie.html" class="btn">Conseils survie</a>
+                </div>
+
+                <div class="card">
+                    <h3>⚙️ Les machines</h3>
+                    <p>Tutoriels pour créer des fermes automatiques et machines redstone.</p>
+                    <a href="machines.html" class="btn">Voir les machines</a>
+                </div>
+            </section>
         </div>
-        
-        <p style="font-size: 0.8em; margin-top: 30px; color: #aaa;">
-            Projet créé par Valentin 🎮
-        </p>
-    </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Site créé par Valentin 🎮 | 2026</p>
+        </div>
+    </footer>
 </body>
 </html>
