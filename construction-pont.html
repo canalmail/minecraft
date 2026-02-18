@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Notice de construction : Pont en pierre - Style LEGO">
+    <meta name="theme-color" content="#00c853">
+    <title>Construction : Pont en pierre - Minecraft par Vava</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="lego-style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">MINECRAFT</h1>
+            <p class="tagline">⛏️ Astuces et guides pour devenir meilleur ⛏️</p>
+            
+            <button class="menu-toggle" id="menuToggle">☰ Menu</button>
+            
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">🏠 Accueil</a></li>
+                    <li><a href="constructions.html" class="active">🏗️ Mes constructions</a></li>
+                    <li><a href="survie.html">⚔️ Mode survie</a></li>
+                    <li><a href="machines.html">⚙️ Les machines</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="lego-instructions">
+                
+                <div class="lego-header">
+                    <div class="lego-logo">VAVA</div>
+                    <div class="lego-title">🌉 PONT EN PIERRE</div>
+                </div>
+
+                <div class="lego-pieces">
+                    <div class="lego-pieces-title">📦 Pièces nécessaires</div>
+                    <div class="lego-pieces-grid">
+                        <div class="lego-piece">
+                            <div class="lego-piece-icon">🪨</div>
+                            <div class="lego-piece-name">Pierre/Bois</div>
+                            <div class="lego-piece-count">60</div>
+                        </div>
+                        <div class="lego-piece">
+                            <div class="lego-piece-icon">◼️</div>
+                            <div class="lego-piece-name">Dalles</div>
+                            <div class="lego-piece-count">30</div>
+                        </div>
+                        <div class="lego-piece">
+                            <div class="lego-piece-icon">🪜</div>
+                            <div class="lego-piece-name">Escaliers</div>
+                            <div class="lego-piece-count">8</div>
+                        </div>
+                        <div class="lego-piece">
+                            <div class="lego-piece-icon">🚧</div>
+                            <div class="lego-piece-name">Barrières</div>
+                            <div class="lego-piece-count">20</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ÉTAPE 1 -->
+                <div class="lego-step">
+                    <div class="lego-step-number">1</div>
+                    <div class="lego-step-content">
+                        <div class="lego-step-visual">
+                            <div class="lego-view-label">Mesurer la rivière</div>
+                            <div style="text-align: center; padding: var(--space-lg);">
+                                <div style="display: inline-block; position: relative;">
+                                    <!-- Rivière -->
+                                    <div style="width: 200px; height: 80px; background: linear-gradient(135deg, #2196f3 0%, #1976d2 100%); border: 3px solid #1565c0; border-radius: 8px; position: relative;">
+                                        <div style="position: absolute; top: 20px; left: 10px; font-size: 1.5rem; opacity: 0.5;">🌊</div>
+                                        <div style="position: absolute; top: 40px; right: 20px; font-size: 1.5rem; opacity: 0.5;">🌊</div>
+                                    </div>
+                                    <!-- Flèches de mesure -->
+                                    <div style="position: absolute; top: -30px; left: 0; right: 0; display: flex; justify-content: space-between; align-items: center;">
+                                        <div style="font-size: 1.5rem; color: #ff0000;">←</div>
+                                        <div style="background: #ff0000; color: #fff; padding: 4px 12px; border-radius: 4px; font-weight: bold; font-size: 0.9rem;">12 blocs</div>
+                                        <div style="font-size: 1.5rem; color: #ff0000;">→</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lego-perspective">Compte les blocs d'un bord à l'autre</div>
+                        </div>
+                        <div class="lego-step-text">
+                            <h4>Mesurer la largeur de la rivière</h4>
+                            <p>Avant de commencer, <strong>compte combien de blocs</strong> il y a d'un bord à l'autre de la rivière.</p>
+                            <p>Note ce nombre ! Tu auras besoin de cette longueur pour construire le pont.</p>
+                            
+                            <div class="lego-tip">
+                                <span class="lego-tip-icon">💡</span>
+                                <strong>Astuce :</strong> Marche le long de la rivière et compte : 1, 2, 3... jusqu'au bord opposé !
+                            </div>
+                            
+                            <div class="lego-step-pieces">
+                                <div class="lego-step-pieces-title">🧱 Pour cette étape :</div>
+                                <div class="lego-step-pieces-list">
+                                    <div class="lego-step-piece">
+                                        <div class="lego-step-piece-icon">👀</div>
+                                        <span>Observation</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lego-arrow">⬇️</div>
+
+                <!-- ÉTAPE 2 -->
+                <div class="lego-step">
+                    <div class="lego-step-number">2</div>
+                    <div class="lego-step-content">
+                        <div class="lego-step-visual">
+                            <div class="lego-view-label">Vue de profil</div>
+                            <div style="text-align: center; padding: var(--space-lg);">
+                                <div style="display: inline-block; position: relative;">
+                                    <!-- Rivière -->
+                                    <div style="width: 200px; height: 60px; background: linear-gradient(135deg, #2196f3 0%, #1976d2 100%); border: 3px solid #1565c0; border-radius: 4px; margin: 40px auto 0;"></div>
+                                    
+                                    <!-- Piliers -->
+                                    <div style="position: absolute; bottom: 0; left: 20px; width: 30px; height: 80px; background: linear-gradient(180deg, #9e9e9e 0%, #757575 100%); border: 3px solid #616161;"></div>
+                                    <div style="position: absolute; bottom: 0; left: 90px; width: 30px; height: 80px; background: linear-gradient(180deg, #9e9e9e 0%, #757575 100%); border: 3px solid #616161;"></div>
+                                    <div style="position: absolute; bottom: 0; right: 20px; width: 30px; height: 80px; background: linear-gradient(180deg, #9e9e9e 0%, #757575 100%); border: 3px solid #616161;"></div>
+                                    
+                                    <!-- Annotations -->
+                                    <div style="position: absolute; top: -10px; left: 20px; background: #ff0000; color: #fff; padding: 2px 6px; border-radius: 4px; font-size: 0.7rem; font-weight: bold;">P1</div>
+                                    <div style="position: absolute; top: -10px; left: 90px; background: #ff0000; color: #fff; padding: 2px 6px; border-radius: 4px; font-size: 0.7rem; font-weight: bold;">P2</div>
+                                    <div style="position: absolute; top: -10px; right: 20px; background: #ff0000; color: #fff; padding: 2px 6px; border-radius: 4px; font-size: 0.7rem; font-weight: bold;">P3</div>
+                                </div>
+                            </div>
+                            <div class="lego-perspective">Piliers tous les 4 blocs</div>
+                        </div>
+                        <div class="lego-step-text">
+                            <h4>Placer les piliers de soutien</h4>
+                            <p>Place des <strong>piliers en pierre</strong> dans l'eau, <strong>tous les 4 blocs</strong>.</p>
+                            <p>Les piliers doivent aller du fond de la rivière jusqu'à <strong>1 bloc au-dessus</strong> de la surface de l'eau.</p>
+                            
+                            <div class="lego-warning">
+                                <span class="lego-warning-icon">⚠️</span>
+                                <strong>Important :</strong> Si la rivière est profonde, prépare beaucoup de blocs ! Tu peux aussi plonger pour construire plus vite.
+                            </div>
+                            
+                            <div class="lego-step-pieces">
+                                <div class="lego-step-pieces-title">🧱 Pour cette étape :</div>
+                                <div class="lego-step-pieces-list">
+                                    <div class="lego-step-piece">
+                                        <div class="lego-step-piece-icon">🪨</div>
+                                        <span>Pierre</span>
+                                        <div class="lego-step-piece-count">40</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lego-arrow">⬇️</div>
+
+                <!-- ÉTAPE 3 -->
+                <div class="lego-step">
+                    <div class="lego-step-number">3</div>
+                    <div class="lego-step-content">
+                        <div class="lego-step-visual">
+                            <div class="lego-view-label">Vue du dessus (tablier 3 blocs)</div>
+                            <div class="lego-build-view" style="grid-template-columns: repeat(12, 1fr); max-width: 420px;">
+                                <!-- Pont 3 blocs de large -->
+                                <div class="lego-block stone highlight">◼️</div>
+                                <div class="lego-block stone highlight">◼️</div>
+                                <div class="lego-block stone highlight">◼️</div>
+                                <div class="lego-block stone highlight">◼️</div>
+                                <div class="lego-block stone highlight">◼️</div>
+                                <div class="lego-block stone highlight">◼️</div>
+                                <div class="lego-block stone highlight">◼️</div>
+                                <div class="lego-block stone highlight">◼️</div>
+                                <div class="lego-block stone highlight">◼️</div>
+                                <div class="lego-block stone highlight">◼️</div>
+                                <div class="lego-block stone highlight">◼️</div>
+                                <div class="lego-block stone highlight">◼️</div>
+                                
+                                <div class="lego-block stone highlight">◼️</div>
+                                <div class="lego-block stone highlight">◼️</div>
+                                <div class="lego-block stone highlight">◼️</div>
+                                <div class="lego-block stone highlight">◼️</div>
+                                <div class="lego-block stone highlight">◼️</div>
+                                <div class="lego-block stone highlight">◼️</div>
+                                <div class="lego-block stone highlight">◼️</div>
+                                <div class="lego-block stone highlight">◼️</div>
+                                <div class="lego-block stone highlight">◼️</div>
+                                <div class="lego-block stone highlight">◼️</div>
+                                <div class="lego-block stone highlight">◼️</div>
+                                <div class="lego-block stone highlight">◼️</div>
+                                
+                                <div class="lego-block stone highlight">◼️</div>
+                                <div class="lego-block stone highlight">◼️</div>
+                                <div class="lego-block stone highlight">◼️</div>
+                                <div class="lego-block stone highlight">◼️</div>
+                                <div class="lego-block stone highlight">◼️</div>
+                                <div class="lego-block stone highlight">◼️</div>
+                                <div class="lego-block stone highlight">◼️</div>
+                                <div class="lego-block stone highlight">◼️</div>
+                                <div class="lego-block stone highlight">◼️</div>
+                                <div class="lego-block stone highlight">◼️</div>
+                                <div class="lego-block stone highlight">◼️</div>
+                                <div class="lego-block stone highlight">◼️</div>
+                            </div>
+                            <div class="lego-perspective">Tablier 3 blocs de large minimum</div>
+                        </div>
+                        <div class="lego-step-text">
+                            <h4>Relier les piliers avec des dalles</h4>
+                            <p>Relie tous les piliers en plaçant des <strong>dalles de pierre</strong> sur le dessus.</p>
+                            <p>Fais un tablier de <strong>3 blocs de large</strong> pour pouvoir marcher confortablement.</p>
+                            
+                            <div class="lego-tip">
+                                <span class="lego-tip-icon">💡</span>
+                                <strong>Astuce :</strong> Utilise des dalles (et pas des blocs pleins) pour un pont plus joli et plus fin !
+                            </div>
+                            
+                            <div class="lego-step-pieces">
+                                <div class="lego-step-pieces-title">🧱 Pour cette étape :</div>
+                                <div class="lego-step-pieces-list">
+                                    <div class="lego-step-piece">
+                                        <div class="lego-step-piece-icon">◼️</div>
+                                        <span>Dalles</span>
+                                        <div class="lego-step-piece-count">30</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lego-arrow">⬇️</div>
+
+                <!-- ÉTAPE 4 -->
+                <div class="lego-step">
+                    <div class="lego-step-number">4</div>
+                    <div class="lego-step-content">
+                        <div class="lego-step-visual">
+                            <div class="lego-view-label">Sécurisation</div>
+                            <div style="text-align: center; padding: var(--space-lg);">
+                                <div style="display: inline-block; position: relative;">
+                                    <!-- Pont vu de côté avec barrières -->
+                                    <div style="display: flex; align-items: flex-end; gap: 4px;">
+                                        <!-- Gauche -->
+                                        <div style="display: flex; flex-direction: column; align-items: center;">
+                                            <div style="width: 20px; height: 40px; background: #8d6e63; border: 2px solid #5d4037;"></div>
+                                            <div style="width: 20px; height: 40px; background: #8d6e63; border: 2px solid #5d4037;"></div>
+                                            <div style="width: 20px; height: 10px; background: #9e9e9e; border: 2px solid #616161;"></div>
+                                            <div style="font-size: 0.7rem; margin-top: 4px;">🚧</div>
+                                        </div>
+                                        <!-- Centre -->
+                                        <div style="display: flex; flex-direction: column; align-items: center;">
+                                            <div style="width: 80px; height: 10px; background: #9e9e9e; border: 2px solid #616161; margin-top: 70px;"></div>
+                                            <div style="font-size: 0.8rem; margin-top: 4px;">Tablier</div>
+                                        </div>
+                                        <!-- Droite -->
+                                        <div style="display: flex; flex-direction: column; align-items: center;">
+                                            <div style="width: 20px; height: 40px; background: #8d6e63; border: 2px solid #5d4037;"></div>
+                                            <div style="width: 20px; height: 40px; background: #8d6e63; border: 2px solid #5d4037;"></div>
+                                            <div style="width: 20px; height: 10px; background: #9e9e9e; border: 2px solid #616161;"></div>
+                                            <div style="font-size: 0.7rem; margin-top: 4px;">🚧</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lego-perspective">Barrières de chaque côté</div>
+                        </div>
+                        <div class="lego-step-text">
+                            <h4>Ajouter des barrières sur les côtés</h4>
+                            <p>Place des <strong>barrières en bois</strong> tout le long des deux côtés du pont.</p>
+                            <p>Mets <strong>2 barrières de hauteur</strong> pour être bien protégé.</p>
+                            
+                            <div class="lego-warning">
+                                <span class="lego-warning-icon">⚠️</span>
+                                <strong>Sécurité :</strong> Sans barrières, tu risques de tomber dans l'eau en traversant !
+                            </div>
+                            
+                            <div class="lego-step-pieces">
+                                <div class="lego-step-pieces-title">🧱 Pour cette étape :</div>
+                                <div class="lego-step-pieces-list">
+                                    <div class="lego-step-piece">
+                                        <div class="lego-step-piece-icon">🚧</div>
+                                        <span>Barrières</span>
+                                        <div class="lego-step-piece-count">20</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lego-arrow">⬇️</div>
+
+                <!-- ÉTAPE 5 -->
+                <div class="lego-step">
+                    <div class="lego-step-number">5</div>
+                    <div class="lego-step-content">
+                        <div class="lego-step-visual">
+                            <div class="lego-view-label">Décoration (optionnel)</div>
+                            <div style="text-align: center; padding: var(--space-lg);">
+                                <div style="display: inline-block;">
+                                    <div style="display: flex; gap: var(--space-md); align-items: flex-end;">
+                                        <!-- Escaliers décoratifs -->
+                                        <div style="display: flex; flex-direction: column; align-items: center; gap: 4px;">
+                                            <div style="width: 40px; height: 15px; background: linear-gradient(45deg, #9e9e9e 0%, #757575 100%); border: 2px solid #616161; clip-path: polygon(0 100%, 100% 100%, 100% 0);"></div>
+                                            <div style="font-size: 0.7rem;">Escalier</div>
+                                        </div>
+                                        
+                                        <div style="display: flex; flex-direction: column; align-items: center; gap: 4px;">
+                                            <div style="font-size: 2rem;">🕯️</div>
+                                            <div style="font-size: 0.7rem;">Torche</div>
+                                        </div>
+                                        
+                                        <div style="display: flex; flex-direction: column; align-items: center; gap: 4px;">
+                                            <div style="font-size: 2rem;">🌸</div>
+                                            <div style="font-size: 0.7rem;">Fleurs</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lego-perspective">Rends ton pont unique !</div>
+                        </div>
+                        <div class="lego-step-text">
+                            <h4>Décorer le pont (optionnel)</h4>
+                            <p>Rends ton pont encore plus beau avec des décorations :</p>
+                            <ul style="margin-left: var(--space-md); line-height: 2;">
+                                <li>🪜 <strong>Escaliers en pierre</strong> sous les arches</li>
+                                <li>🕯️ <strong>Torches</strong> pour éclairer la nuit</li>
+                                <li>🌸 <strong>Fleurs</strong> au début et à la fin du pont</li>
+                                <li>🪨 <strong>Motifs</strong> avec différents types de pierre</li>
+                            </ul>
+                            
+                            <div class="lego-tip">
+                                <span class="lego-tip-icon">💡</span>
+                                <strong>Idée créative :</strong> Alterne pierre claire et pierre sombre pour créer un motif à damier !
+                            </div>
+                            
+                            <div class="lego-step-pieces">
+                                <div class="lego-step-pieces-title">🧱 Pour cette étape :</div>
+                                <div class="lego-step-pieces-list">
+                                    <div class="lego-step-piece">
+                                        <div class="lego-step-piece-icon">🎨</div>
+                                        <span>Au choix</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #9e9e9e 0%, #757575 100%); color: #fff; padding: var(--space-xl); border-radius: 12px; text-align: center; margin-top: var(--space-xl);">
+                    <div style="font-size: 4rem; margin-bottom: var(--space-md);">🎉</div>
+                    <h2 style="font-size: 2rem; margin-bottom: var(--space-md);">PONT TERMINÉ !</h2>
+                    <p style="font-size: 1.2rem;">Ton pont en pierre est prêt ! Tu peux maintenant traverser la rivière en toute sécurité.</p>
+                    <p style="margin-top: var(--space-md);">Temps de construction : <strong>15-20 minutes</strong></p>
+                </div>
+
+                <div style="text-align: center; margin-top: var(--space-xl);">
+                    <a href="constructions.html" class="btn">← Retour aux constructions</a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Site créé par Vava 🎮 | 2026 | Fait avec ❤️ et beaucoup de redstone</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const nav = document.getElementById('nav');
+        
+        menuToggle.addEventListener('click', function() {
+            nav.classList.toggle('open');
+            if (nav.classList.contains('open')) {
+                menuToggle.textContent = '✕ Fermer';
+            } else {
+                menuToggle.textContent = '☰ Menu';
+            }
+        });
+        
+        const menuLinks = document.querySelectorAll('nav a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth < 900) {
+                    nav.classList.remove('open');
+                    menuToggle.textContent = '☰ Menu';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
