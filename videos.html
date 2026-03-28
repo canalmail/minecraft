@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Vidéos YouTube Minecraft par Vava - Tutoriels et gameplay">
+    <meta name="theme-color" content="#00c853">
+    <title>Vidéos YouTube - Minecraft par Vava</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">MINECRAFT</h1>
+            <p class="tagline">⛏️ Astuces et guides pour devenir meilleur ⛏️</p>
+
+            <button class="menu-toggle" id="menuToggle">☰ Menu</button>
+
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">🏠 Accueil</a></li>
+                    <li><a href="constructions.html">🏗️ Mes constructions</a></li>
+                    <li><a href="survie.html">⚔️ Mode survie</a></li>
+                    <li><a href="machines.html">⚙️ Les machines</a></li>
+                    <li><a href="videos.html" class="active">🎬 Vidéos YouTube</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h2>🎬 Vidéos YouTube</h2>
+                <p>Mes vidéos Minecraft préférées et tutoriels en vidéo</p>
+            </section>
+
+            <section class="intro-section">
+                <div class="card">
+                    <p>Bientôt ici : mes vidéos YouTube sur Minecraft !</p>
+                    <p>Des tutoriels, du gameplay et des astuces en vidéo.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Site créé par Vava 🎮 | 2026 | Fait avec ❤️ et beaucoup de redstone //</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const nav = document.getElementById('nav');
+
+        menuToggle.addEventListener('click', function() {
+            nav.classList.toggle('open');
+            if (nav.classList.contains('open')) {
+                menuToggle.textContent = '✕ Fermer';
+            } else {
+                menuToggle.textContent = '☰ Menu';
+            }
+        });
+
+        const menuLinks = document.querySelectorAll('nav a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth < 900) {
+                    nav.classList.remove('open');
+                    menuToggle.textContent = '☰ Menu';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
