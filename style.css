@@ -484,7 +484,7 @@ footer p {
     /* Menu toujours visible sur desktop */
     nav ul {
         display: grid !important;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         gap: var(--space-sm);
         margin-top: var(--space-md);
     }
